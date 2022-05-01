@@ -4,7 +4,7 @@ function Button(props) {
       <button
         value={props.value}
         disabled={props.disabled}
-        className="btn"
+        className={`btn btn_${props.value}`}
         onClick={props.btnClick}
       >
         {props.icon}
