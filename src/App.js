@@ -61,9 +61,12 @@ function App() {
         values[5].icon === "X" &&
         values[8].icon === "X")
     ) {
-      alert("Hurray, X won !!");
       setWins({ X: wins.X + 1, O: wins.O });
-      setValues(initial);
+      setTimeout(() => {
+        setValues(initial);
+        alert("Hurray, X won !!");
+      }, 200);
+
       setCount(0);
     } else if (
       (values[0].icon === "O" &&
@@ -91,15 +94,20 @@ function App() {
         values[5].icon === "O" &&
         values[8].icon === "O")
     ) {
-      alert("Hurray, O won !!");
+      setTimeout(() => {
+        setValues(initial);
+        alert("Hurray, O won !!");
+      }, 200);
+
       setWins({ X: wins.X, O: wins.O + 1 });
-      setValues(initial);
       setCount(0);
     } else {
       if (count === 9) {
-        alert("Match Draw !!");
+        setTimeout(() => {
+          setValues(initial);
+          alert("Match Draw !!");
+        }, 2000);
         setCount(0);
-        setValues(initial);
         return;
       }
     }
