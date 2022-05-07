@@ -106,7 +106,7 @@ function App() {
         setTimeout(() => {
           setValues(initial);
           alert("Match Draw !!");
-        }, 2000);
+        }, 200);
         setCount(0);
         return;
       }
