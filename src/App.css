@@ -65,7 +65,7 @@
 }
 .btn-2 {
   background: #f4a261;
-  color:#2a9d8f;
+  color: #2a9d8f;
   padding: 15px 20px;
   line-height: 20px;
   height: 60px;
@@ -74,4 +74,14 @@
 .scorecard {
   text-align: center;
   margin-bottom: 60px;
+}
+label {
+  font-size: 2rem;
+}
+input {
+  height: 54px!important;
+  background: transparent!important;
+  margin-top: 15px!important;
+  color: white!important;
+  font-size: 24px!important;
 }
